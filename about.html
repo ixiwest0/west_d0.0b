@@ -1,0 +1,200 @@
+<!DOCTYPE HTML>
+<HTML>
+    <head>
+        <meta charset="utf-8">
+        <title>About sf</title> <!--%%%%^^^^^수정 %%%^^^^^^ -->
+        <style>   /* 일단 해보고 사이즈 조정하기 */ /*다 하고 이미지 파일들 메일에 따로 저장해두기*/
+        /*전 파일 동일 부분 */
+        *{margin: 0px; padding: 0px;}
+         ul{list-style: none;} 
+         a{text-decoration: none;}
+ 
+         body {margin: 0;
+               padding: 0;}
+ 
+         header{margin: 0; 
+                height: 90px;
+                background-color: #69BCB7; /* 색 다시 지정[일단 마음에 듦] */
+                position: relative;}
+ 
+         #logo{position: absolute;
+               top: 10px;
+               left: 40px;}
+         .choose{position: absolute;
+                 bottom: 30px;    /*간격 조정 다시 하기(가운데로 맞추기)[일단 함]*/
+                 left: 220px;
+                 font-size: 20px;
+                 font-weight: 520;}  /* nav hover(p.230)설정하기 [설정 완료] */
+ 
+         .choose li{display: inline;
+                    margin-left: 150px;}
+ 
+         .choose li a{color: white;}
+
+         .choose li a:hover{color: #206a5d;}
+
+         .choose li#about a {color: #206a5d;} /* %%%%^^^^^수정 %%%^^^^^^ */
+ 
+         footer{width:100%;
+                height: 75px;
+                background-color: #dadee1;
+                font-size: 15px;
+                text-decoration: none;
+                clear:both;
+                display: block;}
+
+         footer address {display: block;
+                         text-decoration: none;
+                         font-style: normal;
+                         padding: 7px; }
+                         
+         .info a{color:black; font-weight: bold;}
+
+         #A{margin: 0px auto;}
+
+         /*sideA 메뉴 동일 부분(위치 관련) */
+
+         #bodySec{display: block;}
+         
+         #bodySec .wrap #sideA .menuBar{height:70%; float:left;}
+
+         #bodySec .wrap{max-width:1200px; margin: 0 auto;overflow:hidden; padding:40px 0;}
+         #bodySec .wrap #sideA{width:220px;float:left;}
+         @media only screen and (max-width:1200px) {#bodySec .wrap{max-width:100%;}
+                                                   #bodySec .wrap #sideB{width:calc(100% - 255px); padding-right:15px;}}
+         @media only screen and (max-width:1024px) {
+	     #bodySec .wrap{padding-top:20px;}
+	     #bodySec .wrap #sideA{display:none;}
+	     #bodySec .wrap #sideB{width:calc(100% - 30px);padding:0 15px;}}
+
+         #bodySec .wrap {max-width: 1200px; margin:0; overflow:hidden; padding: 40px;}
+         #bodySec .wrap #sideA{width:220px; float:left;}
+         #bodySec .wrap #sideA .menuBar{width:220px; float:left;}
+
+         #bodySec .wrap #sideA .menuBar #menuTitle h2{margin-block-start: 0.83em; margin-block-end: 0.83em;
+                                                      margin-inline-start: 0px; margin-inline-end: 0px;
+                                                      margin-bottom: -1px;}
+
+
+         /*sideA 동일 부분(옆 메뉴바 디자인(색 지정, 글씨 크기 등))*/
+         #bodySec .wrap #sideA .menuBar #menuTitle {background: #69BCB7}
+         #bodySec .wrap #sideA .menuBar #menuTitle h2{text-align:center ;color:#FFF; font-size:25px; font-weight:400; padding:25px 0;} /*폰트 두께 다시 설정하기*/
+         
+         #bodySec .wrap #sideA .menuBar #menuContent li a{color:#4a503d;}
+
+         #bodySec .wrap #sideA .menuBar #menuContent li.li_A a{color:#FFF;}  /* %%%%^^^^^수정 %%%^^^^^^ */
+
+         #bodySec .wrap #sideA .menuBar #menuContent .li_A{background:#bedbbb;
+                                                           display:block; position:relative;padding:15px; border-bottom:1px solid #d0d0d0; font-size:15px; font-weight:400;}  /* %%%%^^^^^수정 %%%^^^^^^ */
+         #bodySec .wrap #sideA .menuBar #menuContent .li_B{display:block; position:relative;padding:15px; border-bottom:1px solid #d0d0d0; font-size:15px; font-weight:400;}  /* %%%%^^^^^수정 %%%^^^^^^ */
+         #bodySec .wrap #sideA .menuBar #menuContent .li_B:hover{background:#DDD; text-decoration:none;}   /* %%%%^^^^^수정 %%%^^^^^^ */
+
+         /*sideB 메뉴 동일부분(위치 관련)*/
+         #bodySec .wrap #sideB{width: 930px;float:right;}
+         #sideB h1 {display: inline-block;
+                    font-weight: 400;
+                    font-size: 30px;
+                    margin: 20px 0 40px;}
+
+         #bodySec .wrap #sideB #realContent {padding-left: 10px;}
+         #bodySec .wrap #sideB #realContent h1{margin: 20px 0 20px;}
+         #bodySec .wrap #sideB #realContent p{padding-left: 5px;}
+         #bodySec .wrap #sideB #realContent ul{padding-left: 5px;}
+
+
+
+        </style>
+    </head>
+    <body>   <!--footer도 회색으로 설정(sf사이트 연결, 전북대 사이트 연결, 학교 번호 입력)[일단 설정함]-->
+        <div id="A">
+            <header>
+                <div id="logo">
+                    <a href="디농개.html"><img src="logo_eng_size_test2.png" alt="로고 이미지 오류"></a> <!--로고 사이즈 조정하기[일단 조정 완료]--> <!--로고에도 링크 걸기-->
+                </div>
+        
+            <nav class="choose">
+                <ul>
+                    <li id="profile"><a href="profile.html" onclick="return proEnter()">PROFILE</a></li> <!--용어는 마지막에 다시 정리--><!--%%^^^스크립트 아이디-->
+                    <li id="about"><a href="about.html">ABOUT SF</a></li>
+                    <li><a href="plan.html">PLAN</a></li>
+                    <li><a href="process.html">PROCESS</a></li>
+                    <li><a href="random.html" onclick="return userEnter()">RANDOM</a></li>
+                </ul>
+            </nav>
+            </header>
+
+            <div id="bodySec"> <!--다 하고 CSS 색깔 변경하기-->
+                <div class="wrap">
+                    <div id="sideA">
+                        <nav class="menuBar">
+                            <div id="menuTitle">
+                                <h2>ABOUT SF</h2>  <!--%%%%^^^^^수정 %%%^^^^^^ -->
+                            </div>
+
+                            <div id="menuContent">
+                                <ul>
+                                    <li class="li_A"><a href="about.html">스마트팜</a></li>  <!--%%%%^^^^^수정 %%%^^^^^^ -->
+                                    <li class="li_B"><a href="about_extra.html">스마트팜 분야</a></li>  <!--%%%%^^^^^수정 %%%^^^^^^ -->
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+
+                    <div id="sideB">
+                        <h1>스마트팜</h1>  <!--%%%%^^^^^수정 %%%^^^^^^ -->
+                        <div id="realContent">  <!--%%%%^^^^^수정 %%%^^^^^^ -->                           
+                                <!--내용작성-->
+                                <h1 style="font-size: 21px;">○ 스마트농업이란</h1>
+                                 <p>&nbsp;‘스마트 농업(Smart Agriculture)’이란 ICT(정보통신기술)를 비롯 각종 첨단기술이 농업 밸류체인 전반에 접목되어 농업 전체의 스마트화를 이루는 개념을 의미합니다.</p>
+                                 <p>&nbsp;스마트 농업은 기존 농업에 혁신적인 기술을 적용하는 것을 아우르는 표현으로 종종 일컬어집니다. 스마트 농업을 정의하는 명확한 기준은 아직까지 정해져 있지않습니다. </p>
+                                <h1 style="font-size: 21px;">○ 스마트팜이란</h1>
+                                  <p> -정의: 비닐하우스·유리온실·축사 등에 ICT를 접목하여 원격·자동으로 작물과 가축의 생육환경을 적정하게 유지·관리할 수 있는 농장을 말합니다.</p>
+                                  <p> -의의: 스마트팜은 작물 생육정보와 환경정보에 대한 데이터를 기반으로 최적 생육환경을 조성하여, 노동력·에너지·양분 등을 종전보다 덜 투입하고도 농산물의 생산성과 품질 제고를 가능하게 합니다.</p>
+                                <h1 style="font-size: 21px;">○ 스마트팜의 운영원리</h1>
+                                    <ul>
+                                        <li>i&#41; 생육환경 유지관리 SW(온실·축사 내 온·습도, CO2수준 등 생육조건을 설정합니다.)</li>
+                                        <li>ii&#41; 환경정보 모니터링(온·습도, 일사량, CO2, 생육환경 등을 자동수집합니다.)</li>
+                                        <li>iii&#41; 자동·원격 환경관리(냉·난방기 구동, 창문 개폐, CO2, 영양분·사료 공급 등의 역할을 합니다.)</li>
+                                    </ul>
+                                <h1 style="font-size: 21px;">○ 스마트팜의 기대효과</h1>
+                                    <ul>
+                                        <li>i&#41; ICT를 접목한 스마트 팜이 보편적으로 확산되면 노동·에너지 등 투입 요소의 최적 사용을 통해 우리 농업의 경쟁력을 한층 높이고, 미래성장산업으로 견인 가능합니다.</li>
+                                        <li>ii&#41; 단순한 노동력 절감 차원을 넘어서 농작업의 시간적·공간적 구속으로부터 자유로워져 여유시간도 늘고, 삶의 질도 개선되어 우수 신규 인력의 농촌 유입 가능성도 증가할 것으로 기대합니다.</li>
+                                    </ul>
+                                </div>
+                    </div>
+                </div>
+            </div>
+            
+
+            <footer>
+                <div class="info">
+                    <address>
+                        <span>[54896] 전라북도 전주시 덕진구 백제대로 567 전북대학교 스마트팜학과</span>
+                        <p><span><a href="https://www.jbnu.ac.kr/kor/">전북대학교 홈페이지 바로가기</a></span></p>
+                        <p><span>
+                            <a href="https://sfarm.jbnu.ac.kr/jsf/index.do">전북대학교 스마트팜학과 홈페이지 바로가기</a>
+                        </span>  <small>참고: 농림수산식품교육문화정보원</small></p>
+                    </address>
+                </div>
+            </footer>
+        </div>
+        <!--profile 암호 입력 스크립트--> 
+        <script>
+            function noAction(e){e.preventDefault(); }
+
+const profilePassword = "030304";
+function proEnter(){
+                     let enterPassword=prompt('임서영의 생년월일 6자리를 입력하세요.');
+                     if(enterPassword==profilePassword){}
+                     else{alert('큰 실수를 하셨네요. 뒤로 돌아가세요..');
+                           noAction(event);}}
+const passEnter=231207;
+function userEnter(){
+                     let enteredPassword=prompt('블로그에 적힌 비밀번호를 입력해주세요');
+                     if(enteredPassword==passEnter){}
+                     else{alert('들어올 자격이 없습니다.');
+                           noAction(event);}  }
+           </script>
+    </body>
+</HTML>
